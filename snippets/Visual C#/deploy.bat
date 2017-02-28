@@ -1,0 +1,1 @@
+@powershell .\vs_deploy.ps1
