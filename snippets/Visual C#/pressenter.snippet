@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>pressenter</Title>
+      <Description>Same as pause, but with enter instead of any key</Description>
+      <Shortcut>pressenter</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false">
+          <ID>SystemConsole</ID>
+          <Function>SimpleTypeName(global::System.Console)</Function>
+        </Literal>
+        <Literal Editable="false">
+          <ID>SystemConsoleKey</ID>
+          <Function>SimpleTypeName(global::System.ConsoleKey)</Function>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[$SystemConsole$.Write("Press Enter to continue . . . ");
+while ($SystemConsole$.ReadKey(true).Key != $SystemConsoleKey$.Enter) { }
+$SystemConsole$.WriteLine();
+$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
