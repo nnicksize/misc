@@ -1,1 +1,1 @@
-@powershell .\vs_deploy.ps1
+@powershell .\vs2015_deploy.ps1
