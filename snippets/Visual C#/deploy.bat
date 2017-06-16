@@ -1,1 +1,0 @@
-@powershell .\vs2015_deploy.ps1
